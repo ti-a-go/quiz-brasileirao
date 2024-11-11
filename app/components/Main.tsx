@@ -2,9 +2,11 @@ import styles from './Main.module.css';
 import Team from './Team';
 import MatchDetails from './MatchDetails';
 import data from "../data"
+import Choices from './Choices';
 
 
 const match = data[0]
+const choices = ["1", "2", "3", "4"]
 
 function Main() {
     return (<>
@@ -36,12 +38,9 @@ function Main() {
             </div>
         </div>
 
-        <div className={`${styles.choicesGrid}`}>
-            <div className={`${styles.choicesGridItem}`}>1</div>
-            <div className={`${styles.choicesGridItem}`}>2</div>
-            <div className={`${styles.choicesGridItem}`}>3</div>
-            <div className={`${styles.choicesGridItem}`}>4</div>
-        </div>
+        <Choices
+            choices={choices}
+        />
     </>
     );
 }
