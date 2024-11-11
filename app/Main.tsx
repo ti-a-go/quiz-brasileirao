@@ -1,6 +1,6 @@
 import styles from './Main.module.css';
-import Image from "next/image"
 import TeamComponent from './TeamComponent';
+import MatchDetails from './MatchDetails';
 import data from "./data"
 
 
@@ -8,10 +8,12 @@ const match = data[0]
 
 function Main() {
     return (<>
-        <div>
-            <p className={`${styles.round}`}>3ª Rodada</p>
-            <p className={`${styles.round}`}>12/0/2020</p>
-        </div>
+        <MatchDetails
+            round={`${match.round}`}
+            date={match.date}
+            time={match.time}
+            key={1}
+        />
 
         <div className={`${styles.gridContainer}`}>
             <div className={`${styles.gridItem}`}>
