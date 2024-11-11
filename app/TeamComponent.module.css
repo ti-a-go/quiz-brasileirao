@@ -1,0 +1,15 @@
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.teamName {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.teamScore {
+    font-size: 1.5rem;
+    color: black;
+}
