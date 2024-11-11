@@ -1,7 +1,7 @@
 import styles from './Main.module.css';
 import Team from './Team';
 import MatchDetails from './MatchDetails';
-import data from "./data"
+import data from "../data"
 
 
 const match = data[0]
