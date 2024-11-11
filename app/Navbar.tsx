@@ -25,9 +25,6 @@ function Navbar() {
                 <a href='#home' className={`${styles.navLink}`}>Sobre</a>
               </li>
               <li onClick={removeActive}>
-                <a href='#home' className={`${styles.navLink}`}>Login</a>
-              </li>
-              <li onClick={removeActive}>
                 <a href='#home' className={`${styles.navLink}`}>Github</a>
               </li>
             </ul>
