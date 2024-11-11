@@ -1,5 +1,5 @@
 import styles from './Main.module.css';
-import TeamComponent from './TeamComponent';
+import Team from './Team';
 import MatchDetails from './MatchDetails';
 import data from "./data"
 
@@ -12,34 +12,27 @@ function Main() {
             round={`${match.round}`}
             date={match.date}
             time={match.time}
-            key={1}
         />
 
         <div className={`${styles.gridContainer}`}>
             <div className={`${styles.gridItem}`}>
-
-                <TeamComponent
-                    teamLogoPath={ match.homeLogo }
-                    teamName={ match.homeTeam }
-                    teamScore={ `${match.homeScore}` }
-                    key={1}
+                <Team
+                    logo={ match.homeLogo }
+                    name={ match.homeTeam }
+                    score={ `${match.homeScore}` }
                 />
-            
             </div>
 
             <div className={`${styles.gridItem}`}>
                 <p className={`${styles.x}`}>X</p>
             </div>
-            
-            <div className={`${styles.gridItem}`}>
 
-                <TeamComponent
-                    teamLogoPath={ match.awayLogo }
-                    teamName={ match.awayTeam }
-                    teamScore={ `${ match.awaySore }` }
-                    key={1}
+            <div className={`${styles.gridItem}`}>
+                <Team
+                    logo={ match.awayLogo }
+                    name={ match.awayTeam }
+                    score={ `${ match.awaySore }` }
                 />
-            
             </div>
         </div>
 

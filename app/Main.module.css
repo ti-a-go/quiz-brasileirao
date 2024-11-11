@@ -1,41 +1,11 @@
-.round {
-    text-align: center;
-    color: black;
-}
-
 .gridContainer {
     display: grid;
     grid-template-columns: auto auto auto;
-    /* background-color: aqua; */
 }
 
 .gridItem {
-    /* background-color: brown; */
     padding: 1rem;
     text-align: center;
-}
-
-/* .homeTeam {
-    background-color: blueviolet;
-}
-
-.awayTeam {
-    background-color: rgb(216, 125, 27);
-} */
-
-.imageContainer {
-    display: flex;
-    justify-content: center;
-}
-
-.teamName {
-    font-size: 1.2rem;
-    color: black;
-}
-
-.teamScore {
-    font-size: 1.5rem;
-    color: black;
 }
 
 .x {
@@ -50,7 +20,6 @@
 }
 
 .choicesGridItem {
-    /* background-color: brown; */
     padding: 1rem;
     text-align: center;
     font-size: 1.5rem;
