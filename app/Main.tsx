@@ -1,7 +1,10 @@
 import styles from './Main.module.css';
 import Image from "next/image"
 import TeamComponent from './TeamComponent';
+import data from "./data"
 
+
+const match = data[0]
 
 function Main() {
     return (<>
@@ -14,9 +17,9 @@ function Main() {
             <div className={`${styles.gridItem}`}>
 
                 <TeamComponent
-                    teamLogoPath="https://logodetimes.com/times/bahia/logo-bahia-256.png"
-                    teamName="Bahia"
-                    teamScore="2"
+                    teamLogoPath={ match.homeLogo }
+                    teamName={ match.homeTeam }
+                    teamScore={ `${match.homeScore}` }
                     key={1}
                 />
             
@@ -29,10 +32,10 @@ function Main() {
             <div className={`${styles.gridItem}`}>
 
                 <TeamComponent
-                    teamLogoPath="https://logodetimes.com/times/vitoria/logo-vitoria-256.png"
-                    teamName="Vitória"
-                    teamScore="?"
-                    key={2}
+                    teamLogoPath={ match.awayLogo }
+                    teamName={ match.awayTeam }
+                    teamScore={ `${ match.awaySore }` }
+                    key={1}
                 />
             
             </div>
