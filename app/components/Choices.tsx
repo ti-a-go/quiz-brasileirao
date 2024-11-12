@@ -6,12 +6,14 @@ interface Props {
 }
 
 function Choices(props: Props) {
+    
+    const choices = props.choices.map(choice => (
+        <div className={`${styles.choicesGridItem}`} key={choice}>{ choice }</div>
+    ))
+
     return (
         <div className={`${styles.choicesGrid}`}>
-            <div className={`${styles.choicesGridItem}`}>{ props.choices[0] }</div>
-            <div className={`${styles.choicesGridItem}`}>{ props.choices[1] }</div>
-            <div className={`${styles.choicesGridItem}`}>{ props.choices[2] }</div>
-            <div className={`${styles.choicesGridItem}`}>{ props.choices[3] }</div>
+            { choices }
         </div>
     )
 }

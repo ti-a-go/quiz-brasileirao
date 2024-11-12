@@ -1,3 +1,26 @@
+# Quiz Brasileirão 20 Anos
+
+Nesse jogo você testa seus conhecimentos sobre o Campeonato Brasileiro de Futebol.
+
+
+# Tarefas
+
+- Cria componente `Choice` que precisa ser um botão que o jogador vai utilizar para escolher entre as opões do quiz.
+- Utilizar os dados reais ao invés dos dados mockados.
+- Capturar a escolha do jogador e selecionar a próxima partidad, caso a escolha esteja correta ou finalizar o jogo caso esta incorreta.
+- Construir a tela de Game Over
+- Construir a tela inicial
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
