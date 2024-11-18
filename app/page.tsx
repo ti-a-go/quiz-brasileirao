@@ -1,12 +1,12 @@
-import Image from "next/image";
 import Navbar from "./components/Navbar";
-import Main from "./components/Main";
-
 
 
 export default function Home() {
   return (<>
     <Navbar></Navbar>
-    <Main></Main>
+
+    <h1>Quiz Brasileirão</h1>
+
+    <p>Teste seus conhecimentos sobre os 20 anos de Campeonato Brasileiro de Futebol (pontos corridos)</p>
   </>);
 }
