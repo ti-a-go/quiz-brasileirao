@@ -1,11 +1,11 @@
 import Navbar from "../components/Navbar";
-import Main from "../components/Main";
+import QuizComponent from "../components/QuizComponent";
 
 
 
 export default function Quiz() {
   return (<>
     <Navbar></Navbar>
-    <Main></Main>
+    <QuizComponent></QuizComponent>
   </>);
 }
